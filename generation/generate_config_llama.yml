@@ -1,0 +1,12 @@
+##### generate配置 #####
+model_name: llama2_vllm 
+
+model_path: /Llama-2-7b-chat-fp16
+tokenizer_path: /Llama-2-7b-chat-fp16
+
+input_data_path: /data/wikiqa_all.jsonl
+output_data_path: data/wikiqa_llama13bchat_generated.jsonl
+
+generation_type: 
+  - "normal"
+  - "uncertainty"

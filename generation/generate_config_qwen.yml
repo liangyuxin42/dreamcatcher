@@ -1,0 +1,14 @@
+##### generate配置 #####
+model_name: qwen_vllm
+
+model_path: /Qwen-14B-Chat
+tokenizer_path: /Qwen-14B-Chat
+
+input_data_path: /data/wikiqa_all.jsonl
+output_data_path: data/wikiqa_qwen14bchat_generated.jsonl
+
+generation_type: 
+  - "normal"
+  - "uncertainty"
+
+

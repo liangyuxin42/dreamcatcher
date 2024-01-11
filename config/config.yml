@@ -1,0 +1,34 @@
+##### Dreamcacher配置 #####
+data:
+  input_data_path: /data/test_generated.jsonl
+  output_data_path: /data/test_autolabeled.jsonl
+  output_rank_data_path: /data/test_autoranked.jsonl
+
+scorer:
+  rm_scorer:
+    model_type: ziya_13b
+    rm_model_path: /General_RM
+    rm_tokenizer_path: /General_RM
+
+  similarity_scorer:
+    use_answer_only: true
+    embedding_model_path: /models/bge-large-zh-v1.5
+    embedding_tokenizer_path: /models/bge-large-zh-v1.5
+  
+  unigram_scorer:
+    unigram_top_k: 5
+
+  probe_scorer:
+    model_type: ziya
+    hidden_size: 5120
+    probe_model_path: probe.pt
+    probe_state_key: hidden_states
+    probe_token: last
+    probe_layer: n
+    model_path: /model_path
+    tokenizer_path: /model_path
+
+ranker:
+  ranker_name: SimpleRanker
+  up_percentile: 55
+  down_percentile: 45

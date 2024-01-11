@@ -1,0 +1,13 @@
+##### generate配置 #####
+model_name: ziya_vllm 
+
+model_path: /ziya_reader_13B
+tokenizer_path: /ziya_reader_13B
+
+input_data_path: /data/wikiqa_all.jsonl
+output_data_path: data/wikiqa_ziya_generated.jsonl
+
+generation_type: 
+  - "normal"
+  - "uncertainty"
+
