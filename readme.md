@@ -1,7 +1,6 @@
-<h1 style="text-align: center;">Dreamcatcher :spider_web: :feather: </h1>
+<h1 style="text-align: center;">Dreamcatcher :star: :spider_web: :star: </h1>
 
-<p style="text-align: center;">Read this in [Chinese](readme-zh.md).</p>
-
+Read this in [Chinese](readme-zh.md).
 
 
 Dreamcacher is an automatic hallucination annotation tool that uses a combination of tools to annotate and rank the degree of hallucination of model responses.
