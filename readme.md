@@ -1,4 +1,4 @@
-<h1 style="text-align: center;">Dreamcatcher :star: :spider_web: :star: </h1>
+<h1 style="text-align: center;">Dreamcatcher :star::spider_web::star: </h1>
 
 Read this in [Chinese](readme-zh.md).
 
@@ -62,14 +62,14 @@ Currently available rankers include:
 
     The threshold is determined by the incoming up_percentile and down_percentile parameters, samples with a sort number < 2 are filtered, and half of the samples are typically filtered when up_percentile=70 and down_percentile=30. (up_percentile=70 means that those scored above 70% are judged as correct, and down_percentile=30 means that those scored below 30% are judged as incorrect. Since it is judged by percentage, it may not be accurate when the amount of data is small.)
 
-### 输入&输出格式
+### input & output
 
 Input: refer to data/test_generated.jsonl, "type": "normal"/"uncertainty" corresponds to the normal generation of results and uncertainty in the generation of results, only scoring is not sorted if you do not need uncertainty in the generation of results.
 
 Output: reference /data/test_autolabeled.jsonl and /test_autoranked.jsonl
 
 
-### 模型知识探测
+### knownledge probing
 
 To train the above probe_scorer, we need to label about 1k data with other scorers first.
 
